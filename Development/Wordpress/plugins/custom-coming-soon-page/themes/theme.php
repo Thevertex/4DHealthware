@@ -17,7 +17,7 @@ if(nccsf_top('color_scheme') == ''){
   <meta name="author" content="Mare Greyling">
   <link rel="shortcut icon" href="<?php echo nccsf_product_info('extend_url'); ?>/themes/images/ico/favicon.ico">
 
-  <title>4D Healthcare</title>
+  <title>4D Healthware</title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo nccsf_product_info('extend_url'); ?>/themes/css/bootstrap.min.css" rel="stylesheet">
@@ -76,21 +76,9 @@ if(nccsf_top('color_scheme') == ''){
                 </script>
 
                 <div id="email_subscription" class="newsletter newsletter-subscription">
-                    <form id="subscribe-form" method="post" action="" onsubmit="return newsletter_check(this)">
-
-                        <table cellspacing="0" cellpadding="3" border="0">
-
-                            <!-- email -->
-                            <tr>
-                                <td align="left">
-                                    <input class="newsletter-email" type="email" name="ne" size="30" placeholder="Enter e-mail" required>
-                                </td>
-                                <td colspan="2" class="newsletter-td-submit">
-                                    <input class="newsletter-submit" type="submit" value="Subscribe" />
-                                </td>
-                            </tr>
-
-                        </table>
+                    <form method="post" action="http://4d.frango.co.za/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+                        <div class="left"><input class="newsletter-email form-control" type="email" name="ne" size="30" placeholder="Enter e-mail" style="height:47px;" required></div>
+                        <div class="left"><button class="newsletter-submit" type="submit" class="btn btn-default">Subscribe</button></div>
                     </form>
                 </div>
         </div>
