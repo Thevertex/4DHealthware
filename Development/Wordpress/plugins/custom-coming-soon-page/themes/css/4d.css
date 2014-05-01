@@ -69,4 +69,8 @@ h1 {
 }
 #email_subscription{
     padding-top: 20px;
+    width: 335px;
+}
+.newsletter-email{
+    margin-top: 16px;
 }

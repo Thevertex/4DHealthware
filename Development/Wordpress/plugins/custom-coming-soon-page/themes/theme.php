@@ -41,9 +41,16 @@ if(nccsf_top('color_scheme') == ''){
 
   <div class="container">
     <div style="padding-top:15%" class="visible-lg">&nbsp;</div>
+    <div class="row logoandtext">
+      <div class="col-md-6">
+         <div class="logo-banner"><img src="<?php echo nccsf_product_info('extend_url'); ?>/themes/images/logo.png" class="img-responsive"/></div>
+      </div>
+      <div class="col-md-6">
+         <div class="main-banner"><img src="<?php echo nccsf_product_info('extend_url'); ?>/themes/images/uc.png" class="img-responsive"/></div>
+      </div>
+    </div>
     <div class="row signup-btn">
         <div class="col-md-6">
-            <div class="left logo"><img src="<?php echo nccsf_product_info('extend_url'); ?>/themes/images/icn-arrow.png" class="img-responsive center-block" /></div>
             <script type="text/javascript">
                     //<![CDATA[
                     if (typeof newsletter_check !== "function") {
@@ -75,24 +82,16 @@ if(nccsf_top('color_scheme') == ''){
                      //]]>
                 </script>
 
-                <div id="email_subscription" class="newsletter newsletter-subscription">
-                    <form method="post" action="http://4d.frango.co.za/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+                <div id="email_subscription" class="newsletter newsletter-subscription center-block">
+                    <form method="post" action="http://4d.frango.co.za/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)" class="center-block">
                         <div class="left"><input class="newsletter-email form-control" type="email" name="ne" size="30" placeholder="Enter e-mail" style="height:47px;" required></div>
-                        <div class="left"><button class="newsletter-submit" type="submit" class="btn btn-default">Subscribe</button></div>
+                        <div class="left"><input type="image" src="<?php echo nccsf_product_info('extend_url'); ?>/themes/images/icn-arrow.png" class="newsletter-submit"/></div>
                     </form>
                 </div>
         </div>
         <div class="col-md-6">
         &nbsp;    
         </div>
-    </div>
-    <div class="row logoandtext">
-      <div class="col-md-6">
-         <div class="logo-banner"><img src="<?php echo nccsf_product_info('extend_url'); ?>/themes/images/logo.png" class="img-responsive"/></div>
-      </div>
-      <div class="col-md-6">
-         <div class="main-banner"><img src="<?php echo nccsf_product_info('extend_url'); ?>/themes/images/uc.png" class="img-responsive"/></div>
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
